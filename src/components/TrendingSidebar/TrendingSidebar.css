@@ -1,0 +1,30 @@
+.trending-sidebar {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: calc(var(--navbar-height) + var(--space-lg));
+}
+
+.trending-sidebar .section-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending-skeleton {
+  display: flex;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.trending-skeleton:last-child {
+  border-bottom: none;
+}

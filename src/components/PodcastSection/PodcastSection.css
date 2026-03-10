@@ -1,0 +1,110 @@
+.podcast-section {
+  background: var(--color-bg);
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.podcast-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.podcast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.podcast-cover {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.podcast-emoji {
+  font-size: 4rem;
+}
+
+.play-btn {
+  position: absolute;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.play-btn:hover {
+  background: #fff;
+  transform: scale(1.1);
+}
+
+.podcast-info {
+  padding: var(--space-lg);
+}
+
+.podcast-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.podcast-host {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.podcast-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.podcast-duration {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: var(--color-tag-bg);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.listen-now-btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: all var(--transition-fast);
+}
+
+.listen-now-btn:hover {
+  color: var(--color-accent-hover);
+}
+
+@media (max-width: 900px) {
+  .podcast-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .podcast-grid {
+    grid-template-columns: 1fr;
+  }
+}
