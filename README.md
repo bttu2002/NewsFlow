@@ -60,8 +60,8 @@ By leveraging **TypeScript**, I created strict data models for articles and sour
 **Bui Thanh Tu** - Frontend Developer
   - **Phone:** 0935648545
   - **Gmail:** bttu2002@gmail.com
-  - **LinkedIn** [@bttu2002](www.linkedin.com/in/bttu2002)
-  - **GitHub:** [@bttu2002](www.github.com/bttu2002)
+  - **LinkedIn** [@bttu2002](https://www.linkedin.com/in/bttu2002)
+  - **GitHub:** [@bttu2002](https://www.github.com/bttu2002)
 -----
 
 *Developed with ❤️ and Passion for clean code.*
